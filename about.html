@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Aryan's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #000021;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.05rem;
+      }
+
+      .about-container {
+        max-width: 1000px;
+        margin: 100px auto;
+        padding: 40px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #00bfff;
+      }
+
+      .about-text {
+        font-size: 1.1rem;
+        text-align: justify;
+        margin-bottom: 40px;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .skill {
+        background-color: rgba(0, 191, 255, 0.1);
+        border: 1px solid #00bfff;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .skill:hover {
+        background-color: #00bfff;
+        color: #000021;
+        transform: translateY(-3px);
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 0.9rem;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Aryan's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="about-container">
+      <h1>About Me</h1>
+      <p class="about-text">
+        Hi, I'm <strong>Aryan</strong>, a passionate and detail-oriented
+        Computer Science student with a strong interest in full-stack web
+        development and software engineering. I enjoy turning ideas into
+        functional and user-friendly digital products. Over time, I've built
+        projects like a <strong>Task Management System (FastAPI)</strong>, a
+        <strong>Student Management System</strong>, and a
+        <strong>Swiggy Static Website Clone</strong>. I'm currently learning
+        modern web technologies like
+        <strong>FastAPI, JavaScript, and React</strong>, and continuously
+        improving my skills in backend development, database management, and
+        problem-solving. My goal is to grow as a developer, collaborate on
+        real-world projects, and contribute to innovative solutions that make
+        people's lives easier.
+      </p>
+
+      <h2 style="text-align: center; color: #00bfff">Skills & Technologies</h2>
+      <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">FastAPI</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
+    </div>
+
+    <footer>© 2025 Aryan's Portfolio. All rights reserved.</footer>
+  </body>
+</html>

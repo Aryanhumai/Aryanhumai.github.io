@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Aryan's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 60px 20px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.05rem;
+      }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00bcd4;
+      margin-bottom: 15px;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #ccc;
+      text-align: center;
+      max-width: 700px;
+      margin-bottom: 40px;
+    }
+
+    .contact-container {
+      background: #0a0a3a;
+      border: 1px solid #1a1a55;
+      border-radius: 12px;
+      padding: 40px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0px 0px 20px rgba(0, 188, 212, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .contact-container:hover {
+      box-shadow: 0px 0px 30px rgba(0, 188, 212, 0.2);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #00bcd4;
+    }
+
+    input, textarea {
+      padding: 12px 15px;
+      border-radius: 8px;
+      border: none;
+      background-color: #11114d;
+      color: white;
+      font-size: 1rem;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border: 1px solid #00bcd4;
+      box-shadow: 0px 0px 5px rgba(0, 188, 212, 0.3);
+    }
+
+    textarea {
+      resize: none;
+      min-height: 120px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+      transform: scale(1.02);
+    }
+
+    .social-links {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .social-links h3 {
+      color: #00bcd4;
+      margin-bottom: 10px;
+    }
+
+    .social-links a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #00bcd4;
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="left">Aryan's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  <h1>Contact Me</h1>
+  <p class="subtitle">Have a project in mind or want to collaborate? Feel free to reach out — I’d love to connect!</p>
+
+  <div class="contact-container">
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <div class="social-links">
+    <h3>Connect With Me</h3>
+    <a href="mailto:aryanbhatia050@gmail.com">📧 Email</a>
+    <a href="https://github.com/yourgithub" target="_blank">💻 GitHub</a>
+    <a href="https://www.linkedin.com/in/aryan-bhatia-611702321" target="_blank">🔗 LinkedIn</a>
+  </div>
+</body>
+</html>

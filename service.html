@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Aryan's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.05rem;
+      }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #00bcd4;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 50px;
+      color: #ccc;
+      text-align: center;
+      max-width: 700px;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      width: 90%;
+      max-width: 1100px;
+    }
+
+    .service-card {
+      background: #0a0a3a;
+      border: 1px solid #22225a;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      border-color: #00bcd4;
+      box-shadow: 0px 0px 15px rgba(0, 188, 212, 0.3);
+    }
+
+    .service-card h2 {
+      font-size: 1.5rem;
+      color: #00bcd4;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: #aaa;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="left">Aryan's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  <h1>My Services</h1>
+  <p class="subtitle">
+    Here's what I specialize in — turning ideas into reliable, scalable, and user-friendly digital solutions.
+  </p>
+
+  <div class="services-container">
+    <div class="service-card">
+      <h2>Full-Stack Web Development</h2>
+      <p>
+        Building modern, scalable web applications using Python (FastAPI), JavaScript, and SQL databases. I focus on creating
+        seamless front-end experiences and robust back-end logic.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h2>Frontend Development</h2>
+      <p>
+        Designing responsive and interactive interfaces using HTML, CSS, and JavaScript. I prioritize clean UI, usability, and accessibility.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h2>Backend Development</h2>
+      <p>
+        Creating and managing RESTful APIs, authentication systems, and efficient data handling using FastAPI and PostgreSQL.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h2>Project Development Assistance</h2>
+      <p>
+        Helping students and develop 
