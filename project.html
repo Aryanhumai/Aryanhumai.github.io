@@ -1,27 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects - Aryan's Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Aryan's Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
 
-    body {
-      background-color: rgb(0, 0, 33);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 60px 20px;
-    }
-    nav {
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
         display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        padding: 60px 20px;
+      }
+
+      nav {
+        display: flex;
+        width: 100%;
         justify-content: space-around;
         align-items: center;
         height: 80px;
@@ -43,69 +45,77 @@
         color: rgb(153, 153, 226);
         font-size: 1.05rem;
       }
+      .left {
+        font-size: 1.5rem;
+      }
+      .content {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #00bcd4;
-    }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #00bcd4;
+      }
 
-    p.subtitle {
-      font-size: 1.2rem;
-      margin-bottom: 50px;
-      color: #ccc;
-      text-align: center;
-      max-width: 700px;
-    }
+      p.subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+        color: #ccc;
+        text-align: center;
+        max-width: 100%;
+      }
 
-    .projects-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      width: 90%;
-      max-width: 1100px;
-    }
+      .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        width: 100%;
+        max-width: 1100px;
+      }
 
-    .project-card {
-      background: #0a0a3a;
-      border: 1px solid #22225a;
-      border-radius: 12px;
-      padding: 25px 20px;
-      text-align: left;
-      transition: all 0.3s ease;
-    }
+      .project-card {
+        background: #0a0a3a;
+        border: 1px solid #22225a;
+        border-radius: 12px;
+        padding: 25px 20px;
+        text-align: left;
+        transition: all 0.3s ease;
+      }
 
-    .project-card:hover {
-      transform: translateY(-10px);
-      border-color: #00bcd4;
-      box-shadow: 0px 0px 15px rgba(0, 188, 212, 0.3);
-    }
+      .project-card:hover {
+        transform: translateY(-10px);
+        border-color: #00bcd4;
+        box-shadow: 0px 0px 15px rgba(0, 188, 212, 0.3);
+      }
 
-    .project-card h2 {
-      font-size: 1.4rem;
-      color: #00bcd4;
-      margin-bottom: 8px;
-    }
+      .project-card h2 {
+        font-size: 1.4rem;
+        color: #00bcd4;
+        margin-bottom: 8px;
+      }
 
-    .project-card p {
-      color: #aaa;
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 10px;
-    }
+      .project-card p {
+        color: #aaa;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
 
-    .project-card a {
-      color: #00bcd4;
-      text-decoration: none;
-      font-weight: 600;
-    }
+      .project-card a {
+        color: #00bcd4;
+        text-decoration: none;
+        font-weight: 600;
+      }
 
-    .project-card a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+      .project-card a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
     <header>
       <nav>
         <div class="left">Aryan's Portfolio</div>
@@ -120,43 +130,54 @@
         </div>
       </nav>
     </header>
-  <h1>My Projects</h1>
-  <p class="subtitle">
-    A glimpse into some of the projects I've built to sharpen my development skills and solve real-world problems.
-  </p>
-
-  <div class="projects-container">
-    <div class="project-card">
-      <h2>Student Management System (2025)</h2>
-      <p>
-        A console-based Python application for managing student records efficiently using CSV files. Includes CRUD operations, data validation, and a user-friendly menu-driven interface.
+    <main class="content">
+      <h1>My Projects</h1>
+      <p class="subtitle">
+        A glimpse into some of the projects I've built to sharpen my development
+        skills and solve real-world problems.
       </p>
-      <a href="#">View Code</a>
-    </div>
 
-    <div class="project-card">
-      <h2>Task Management System (FastAPI, 2025)</h2>
-      <p>
-        A full-stack REST API built with FastAPI and PostgreSQL. Implements authentication, role-based access, and modular project structure for scalability.
-      </p>
-      <a href="#">View Code</a>
-    </div>
+      <div class="projects-container">
+        <div class="project-card">
+          <h2>Student Management System (2025)</h2>
+          <p>
+            A console-based Python application for managing student records
+            efficiently using CSV files. Includes CRUD operations, data
+            validation, and a user-friendly menu-driven interface.
+          </p>
+          <!-- <a href="#">View Code</a> -->
+        </div>
 
-    <div class="project-card">
-      <h2>Swiggy Static Website Clone (2025)</h2>
-      <p>
-        A static frontend clone of Swiggy built using HTML, CSS, and JavaScript. Features responsive design and layout components like restaurant cards, banners, and menus.
-      </p>
-      <a href="#">Live Demo</a>
-    </div>
+        <div class="project-card">
+          <h2>Task Management System (FastAPI, 2025)</h2>
+          <p>
+            A full-stack REST API built with FastAPI and PostgreSQL. Implements
+            authentication, role-based access, and modular project structure for
+            scalability.
+          </p>
+          <!-- <a href="#">View Code</a> -->
+        </div>
 
-    <div class="project-card">
-      <h2>Portfolio Website (2025)</h2>
-      <p>
-        A personal developer portfolio created from scratch to showcase my projects, skills, and experience using HTML, CSS, and modern responsive design techniques.
-      </p>
-      <a href="#">Visit Website</a>
-    </div>
-  </div>
-</body>
+        <div class="project-card">
+          <h2>Swiggy Static Website Clone (2025)</h2>
+          <p>
+            A static frontend clone of Swiggy built using HTML, CSS, and
+            JavaScript. Features responsive design and layout components like
+            restaurant cards, banners, and menus.
+          </p>
+          <!-- <a href="#">Live Demo</a> -->
+        </div>
+
+        <div class="project-card">
+          <h2>Portfolio Website (2025)</h2>
+          <p>
+            A personal developer portfolio created from scratch to showcase my
+            projects, skills, and experience using HTML, CSS, and modern
+            responsive design techniques.
+          </p>
+          <!-- <a href="#">Visit Website</a> -->
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
